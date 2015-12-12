@@ -13,6 +13,7 @@ var won = false;
 var num_state = '';
 var number_guess = Math.pow(2,19);
 alert("Welcome to the number guesser! Pick a number between one and a million!");
+
 while(won == false){
   num_state = prompt("Is your number " + number_guess + "?").toLowerCase();
   if(num_state == "higher"){
@@ -23,13 +24,14 @@ while(won == false){
     half -= 1;
     number_guess -= Math.pow(2,half)
   }
-  else{
-    alert("That wasn't a valid input. Please enter higher or lower depending on the number")
-  }
-  if(num_state == 'yes'){
+  else if(num_state == 'yes'){
     won = true;
     alert("yes! I won!");
   }
+  else{
+    alert("That wasn't a valid input. Please enter higher or lower depending on the number")
+  }
+
 }
 
 
