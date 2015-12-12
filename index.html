@@ -17,6 +17,7 @@
 <div height="15px"></div>
 <button type = "button" onclick="higher()">Higher</button>
 <button type = "button" onclick="lower()">Lower</button>
+<button type = "button" onclick="win()">You got it!</button>
 <div id = "guess_count"></div>
 
 <script>
@@ -39,6 +40,10 @@ half -= 1;
 number_guess -= Math.pow(2,half)
 document.getElementById('question').innerHTML = ('Is your number ' + number_guess);
 document.getElementById('guess_count').innerHTML = ('guesses: ' + (19 - half));
+}
+
+function win(){
+  document.write("Yes! I won in only " + (19 - half) + " guesses!")
 }
 
 </script>
