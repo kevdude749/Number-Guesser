@@ -17,11 +17,11 @@ while(won == false){
   num_state = prompt("Is your number " + number_guess + "?").toLowerCase();
   if(num_state == "higher"){
     half -= 1;
-    number_guess += 2 ^ half
+    number_guess += pow(2,half)
   }
   if(num_state == 'lower'){
     half -= 1;
-    number_guess -= 2 ^ half
+    number_guess -= pow(2,half)
   }
   else{
     alert("That wasn't a valid input. Please enter higher or lower depending on the number")
