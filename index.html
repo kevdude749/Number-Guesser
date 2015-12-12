@@ -11,17 +11,17 @@ var guesses = 0;
 var half = 19;
 var won = false;
 var num_state = '';
-var number_guess = 2^19;
+var number_guess = Math.pow(2,19);
 alert("Welcome to the number guesser! Pick a number between one and a million!");
 while(won == false){
   num_state = prompt("Is your number " + number_guess + "?").toLowerCase();
   if(num_state == "higher"){
     half -= 1;
-    number_guess += pow(2,half)
+    number_guess += Math.pow(2,half)
   }
   else if(num_state == 'lower'){
     half -= 1;
-    number_guess -= pow(2,half)
+    number_guess -= Math.pow(2,half)
   }
   else{
     alert("That wasn't a valid input. Please enter higher or lower depending on the number")
