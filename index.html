@@ -32,18 +32,18 @@ function higher(){
 half -= 1;
 number_guess += Math.pow(2,half)
 document.getElementById('question').innerHTML = ('Is your number ' + number_guess);
-document.getElementById('guess_count').innerHTML = ('guesses: ' + (19 - half));
+document.getElementById('guess_count').innerHTML = ('guesses: ' + (20 - half));
 }
 
 function lower(){
 half -= 1;
 number_guess -= Math.pow(2,half)
 document.getElementById('question').innerHTML = ('Is your number ' + number_guess);
-document.getElementById('guess_count').innerHTML = ('guesses: ' + (19 - half));
+document.getElementById('guess_count').innerHTML = ('guesses: ' + (20 - half));
 }
 
 function win(){
-  document.write("Yes! I won in only " + (19 - half) + " guesses!")
+  document.write("Yes! I won in only " + (20 - half) + " guesses!")
 }
 
 </script>
