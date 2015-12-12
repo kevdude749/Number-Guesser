@@ -5,6 +5,7 @@
 </head>
 
 <body>
+<div id = "question"></div>
 <button type = "button" onclick="higher()">Higher</button>
 <button type = "button" onclick="lower()">Lower</button>
 <script>
@@ -14,18 +15,18 @@ var number_guess = Math.pow(2,19);
 
 alert("Welcome to the number guesser! Pick a number between one and a million!");
 
-document.write("Is your number " + number_guess)
+document.getElementById('question').innerHTML = ('Is your number ' + number_guess);
 
 function higher(){
 half -= 1;
 number_guess += Math.pow(2,half)
-document.write("Is your number " + number_guess)
+document.getElementById('question').innerHTML = ('Is your number ' + number_guess);
 }
 
 function lower(){
 half -= 1;
 number_guess -= Math.pow(2,half)
-document.write("Is your number " + number_guess)
+document.getElementById('question').innerHTML = ('Is your number ' + number_guess);
 }
 
 </script>
