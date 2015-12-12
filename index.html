@@ -2,20 +2,27 @@
 <html>
 <head>
 <title>hello world</title>
+<style>
+  body{margin:10;background-color:'green'}
+  
+  
+  
+</style>
 </head>
 
 <body>
-  
-<p>hello world</p>
+
+<h1>Welcome to the Number Guesser!</h1>  
+<div id = "question"></div>
+
 <button type = "button" onclick="higher()">Higher</button>
 <button type = "button" onclick="lower()">Lower</button>
-<div id = "question"></div>
+
 <script>
 
 var half = 19;
 var number_guess = Math.pow(2,19);
 
-alert("Welcome to the number guesser! Pick a number between one and a million!");
 
 document.getElementById('question').innerHTML = ('Is your number ' + number_guess);
 
