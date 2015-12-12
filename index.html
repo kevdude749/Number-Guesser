@@ -34,7 +34,7 @@ half -= 1;
 number_guess += Math.pow(2,half)
 document.getElementById('question').innerHTML = ('Is your number ' + number_guess);
 document.getElementById('guess_count').innerHTML = ('guesses: ' + (20 - half));
-if (20-half == 20){
+if (20-half == 21){
   win()
 }
 }
@@ -44,7 +44,7 @@ half -= 1;
 number_guess -= Math.pow(2,half)
 document.getElementById('question').innerHTML = ('Is your number ' + number_guess);
 document.getElementById('guess_count').innerHTML = ('guesses: ' + (20 - half));
-if (20-half == 20){
+if (20-half == 21){
   win()
 }
 }
